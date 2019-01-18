@@ -1,0 +1,11 @@
+﻿<h2>About</h2>
+
+<p>Hello this is the About page</p>
+
+<ul>
+    @for (int i = 0; i < (int)ViewData["Rate"]; i++)
+    {
+        <li> @ViewData["Name"]</li>
+        <li>@ViewData["Age"]</li>
+    }
+</ul>
